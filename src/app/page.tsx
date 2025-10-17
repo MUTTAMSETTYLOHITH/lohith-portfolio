@@ -23,7 +23,7 @@ type IconType = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 const projects = [
   {
     title: "Healthcare Credentialing Automation",
-    subtitle: "Java 17 â€¢ Spring Boot â€¢ React â€¢ Kafka â€¢ AWS EKS â€¢ Terraform",
+    subtitle: "Java 17 • Spring Boot • React • Kafka • AWS EKS • Terraform",
     description:
       "Cloud-native platform that automates clinician onboarding, verification, and compliance workflows with event-driven microservices.",
     highlights: [
@@ -32,13 +32,13 @@ const projects = [
       "Azure AD (OIDC) + SSL auto-rotation",
     ],
     links: {
-      demo: "#",
-      repo: "https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing-platform",
+      demo: "https://healthcare-credentialing.vercel.app/verifications",
+      repo: "https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing",
     },
   },
   {
     title: "Serverless Insurance Claims",
-    subtitle: "AWS Lambda â€¢ API Gateway â€¢ DynamoDB â€¢ SQS â€¢ React/Next.js",
+    subtitle: "AWS Lambda • API Gateway • DynamoDB • SQS • React/Next.js",
     description:
       "Event-driven claims intake, adjudication, and notifications with a real-time status UI and IaC provisioning.",
     highlights: [
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "FinTech Transaction Monitor",
-    subtitle: "Spring Boot â€¢ Redis â€¢ PostgreSQL â€¢ Angular â€¢ Grafana",
+    subtitle: "Spring Boot • Redis • PostgreSQL • Angular • Grafana",
     description:
       "Real-time anomaly detection and fraud flagging with dashboards and alerting.",
     highlights: [
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Chat Analytics (Real-time)",
-    subtitle: "Python FastAPI â€¢ Kafka â€¢ ElasticSearch â€¢ React â€¢ GKE",
+    subtitle: "Python FastAPI • Kafka • ElasticSearch • React • GKE",
     description:
       "Streaming sentiment and topic detection with search and visualization.",
     highlights: [
@@ -83,14 +83,10 @@ const projects = [
   },
   {
     title: "IAM & SSL Ops Dashboard",
-    subtitle: "Spring Security â€¢ OAuth2/OIDC â€¢ React â€¢ Azure AD â€¢ Certbot",
+    subtitle: "Spring Security • OAuth2/OIDC • React • Azure AD • Certbot",
     description:
       "Unified portal for RBAC, SSO, and certificate lifecycle automation.",
-    highlights: [
-      "SAML + OIDC federation",
-      "RBAC + policy templates",
-      "Automated cert renewals",
-    ],
+    highlights: ["SAML + OIDC federation", "RBAC + policy templates", "Automated cert renewals"],
     links: {
       demo: "#",
       repo: "https://github.com/MUTTAMSETTYLOHITH/iam-ssl-ops",
@@ -178,7 +174,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="mt-4 text-slate-600">
-              Spring Boot â€¢ React â€¢ AWS â€¢ Kubernetes â€¢ Kafka â€¢ Identity (OIDC/SAML). Focused on performance, automation,
+              Spring Boot • React • AWS • Kubernetes • Kafka • Identity (OIDC/SAML). Focused on performance, automation,
               and secure-by-default delivery.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -201,7 +197,7 @@ export default function Portfolio() {
               </Button>
             </div>
             <div className="mt-4 flex items-center gap-3 text-slate-600">
-              <MapPin className="h-4 w-4" /> Boca Raton, FL â€¢ Open to Remote/Hybrid
+              <MapPin className="h-4 w-4" /> Boca Raton, FL • Open to Remote/Hybrid
             </div>
           </motion.div>
 
@@ -227,7 +223,7 @@ export default function Portfolio() {
                     <Cpu className="h-4 w-4" /> Real-time streams with Kafka
                   </div>
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="h-4 w-4" /> IAM: OAuth2/OIDC â€¢ SAML â€¢ SSL Automation
+                    <ShieldCheck className="h-4 w-4" /> IAM: OAuth2/OIDC • SAML • SSL Automation
                   </div>
                 </CardContent>
               </Card>
@@ -242,7 +238,7 @@ export default function Portfolio() {
         <Card className="rounded-3xl">
           <CardContent className="p-6 text-slate-700 leading-relaxed">
             I design and ship resilient, observable services that turn complex domain workflows into fast, delightful
-            experiences. Recent wins include 35â€“40% latency reductions, 99.9% uptime, and CI/CD pipelines that halve
+            experiences. Recent wins include 35–40% latency reductions, 99.9% uptime, and CI/CD pipelines that halve
             release overhead.
           </CardContent>
         </Card>
@@ -288,15 +284,15 @@ export default function Portfolio() {
                 </ul>
                 <div className="flex gap-3 pt-2">
                   <Button asChild size="sm" className="rounded-xl">
-                    <a href={p.links.demo} target="_blank" rel="noreferrer">
+                    <a href={p.links.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
-                      [<a href="https://healthcare-credentialing.vercel.app/verifications" target="_blank" rel="noopener noreferrer">Live Demo</a>](https://healthcare-credentialing.vercel.app/verifications)
+                      Live Demo
                     </a>
                   </Button>
                   <Button asChild size="sm" variant="secondary" className="rounded-xl">
-                    <a href={p.links.repo} target="_blank" rel="noreferrer">
+                    <a href={p.links.repo} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
-                      [<a href="https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing" target="_blank" rel="noopener noreferrer">Source</a>](https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing)
+                      Source
                     </a>
                   </Button>
                 </div>
@@ -312,23 +308,23 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-2 gap-4">
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Arthrex (Med-Tech) â€¢ 2025</CardTitle>
-              <p className="text-xs text-muted-foreground">Java 17 â€¢ AWS EKS â€¢ React â€¢ IAM</p>
+              <CardTitle className="text-lg">Arthrex (Med-Tech) • 2025</CardTitle>
+              <p className="text-xs text-muted-foreground">Java 17 • AWS EKS • React • IAM</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>â€¢ 99.9% uptime with autoscaling & SLO alerts</p>
-              <p>â€¢ 35â€“40% latency reduction via profiling & caching</p>
-              <p>â€¢ SSL lifecycle automation + Azure AD federation</p>
+              <p>• 99.9% uptime with autoscaling & SLO alerts</p>
+              <p>• 35–40% latency reduction via profiling & caching</p>
+              <p>• SSL lifecycle automation + Azure AD federation</p>
             </CardContent>
           </Card>
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Tower Hill Insurance â€¢ 2024</CardTitle>
-              <p className="text-xs text-muted-foreground">React/Angular â€¢ SQL tuning â€¢ CI/CD</p>
+              <CardTitle className="text-lg">Tower Hill Insurance • 2024</CardTitle>
+              <p className="text-xs text-muted-foreground">React/Angular • SQL tuning • CI/CD</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>â€¢ +45% claims throughput; âˆ’30% UI/SQL load times</p>
-              <p>â€¢ Release overhead halved with GitLab & Azure DevOps</p>
+              <p>• +45% claims throughput; −30% UI/SQL load times</p>
+              <p>• Release overhead halved with GitLab & Azure DevOps</p>
             </CardContent>
           </Card>
         </div>
@@ -336,7 +332,7 @@ export default function Portfolio() {
 
       {/* Contact */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-8">
-        <SectionTitle icon={Mail} title="Contact" subtitle="Letâ€™s build something valuable" />
+        <SectionTitle icon={Mail} title="Contact" subtitle="Let’s build something valuable" />
         <Card className="rounded-3xl">
           <CardContent className="p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="space-y-1 text-slate-700">
@@ -375,7 +371,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-4 py-10 text-center text-sm text-slate-500">
-        Â© {new Date().getFullYear()} Lohith Muttamsetty â€¢ Built with React, Tailwind, and shadcn/ui
+        © {new Date().getFullYear()} Lohith Muttamsetty • Built with React, Tailwind, and shadcn/ui
         <div className="mt-2 flex items-center justify-center gap-4">
           <a className="underline" href="https://github.com/MUTTAMSETTYLOHITH" target="_blank" rel="noreferrer">
             GitHub
@@ -389,5 +385,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
