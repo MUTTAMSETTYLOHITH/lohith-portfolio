@@ -290,13 +290,13 @@ export default function Portfolio() {
                   <Button asChild size="sm" className="rounded-xl">
                     <a href={p.links.demo} target="_blank" rel="noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                      [<a href="https://healthcare-credentialing.vercel.app/verifications" target="_blank" rel="noopener noreferrer">Live Demo</a>](https://healthcare-credentialing.vercel.app/verifications)
                     </a>
                   </Button>
                   <Button asChild size="sm" variant="secondary" className="rounded-xl">
                     <a href={p.links.repo} target="_blank" rel="noreferrer">
                       <Github className="h-4 w-4 mr-2" />
-                      Source
+                      [<a href="https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing" target="_blank" rel="noopener noreferrer">Source</a>](https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing)
                     </a>
                   </Button>
                 </div>
@@ -389,4 +389,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
