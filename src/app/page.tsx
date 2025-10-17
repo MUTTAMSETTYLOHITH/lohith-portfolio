@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -32,8 +32,8 @@ const projects = [
       "Azure AD (OIDC) + SSL auto-rotation",
     ],
     links: {
-      demo: "#",
-      repo: "https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing-platform",
+      demo: "https://healthcare-credentialing.vercel.app/verifications",
+      repo: "https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing",
     },
   },
   {
@@ -327,7 +327,7 @@ export default function Portfolio() {
               <p className="text-xs text-muted-foreground">React/Angular • SQL tuning • CI/CD</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• +45% claims throughput; −30% UI/SQL load times</p>
+              <p>• +45% claims throughput; ˆ’30% UI/SQL load times</p>
               <p>• Release overhead halved with GitLab & Azure DevOps</p>
             </CardContent>
           </Card>
@@ -336,7 +336,7 @@ export default function Portfolio() {
 
       {/* Contact */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-8">
-        <SectionTitle icon={Mail} title="Contact" subtitle="Let’s build something valuable" />
+        <SectionTitle icon={Mail} title="Contact" subtitle="Let€™s build something valuable" />
         <Card className="rounded-3xl">
           <CardContent className="p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="space-y-1 text-slate-700">
@@ -389,3 +389,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
