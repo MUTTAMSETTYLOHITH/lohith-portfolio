@@ -62,7 +62,7 @@ const projects = [
       "CI/CD via Jenkins & GitHub Actions",
     ],
     links: {
-      demo: "#",
+      demo: "https://fintech-transaction-monitor-b9yqtd52c.vercel.app",
       repo: "https://github.com/MUTTAMSETTYLOHITH/fintech-transaction-monitor",
     },
   },
@@ -389,5 +389,6 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
 
