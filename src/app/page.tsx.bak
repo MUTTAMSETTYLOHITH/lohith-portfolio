@@ -37,7 +37,7 @@ const projects = [
     },
   },
   {
-    title: "Serverless Insurance Claims",
+    title: "Claims Elite",
     subtitle: "AWS Lambda • API Gateway • DynamoDB • SQS • React/Next.js",
     description:
       "Event-driven claims intake, adjudication, and notifications with a real-time status UI and IaC provisioning.",
@@ -47,7 +47,7 @@ const projects = [
       "<200ms p95 API latency",
     ],
     links: {
-      demo: "#",
+      demo: "https://claims-elite-advanced.vercel.app",
       repo: "https://github.com/MUTTAMSETTYLOHITH/serverless-insurance-claims",
     },
   },
@@ -389,4 +389,6 @@ export default function Portfolio() {
     </div>
   );
 }
+
+
 
