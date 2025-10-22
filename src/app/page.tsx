@@ -77,7 +77,7 @@ const projects = [
       "GKE autoscaling",
     ],
     links: {
-      demo: "#",
+      demo: "https://chat-analytics-rc21afowt-lohith-muttamsettys-projects.vercel.app/",
       repo: "https://github.com/MUTTAMSETTYLOHITH/chat-analytics",
     },
   },
@@ -389,8 +389,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
-
-
-
