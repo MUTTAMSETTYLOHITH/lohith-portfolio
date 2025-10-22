@@ -1,0 +1,7 @@
+﻿{
+  "redirects": [
+    { "source": "/chat-analytics", "destination": "/chat-analytics-real-time", "permanent": false },
+    { "source": "/Chat%20Analytics%20(Real-time)", "destination": "/chat-analytics-real-time", "permanent": false },
+    { "source": "/chat-analytics-real-time", "destination": "https://chat-analytics-rc21afowt-lohith-muttamsettys-projects.vercel.app/", "permanent": false }
+  ]
+}
