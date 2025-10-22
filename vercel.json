@@ -1,4 +1,5 @@
-﻿{
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     { "source": "/chat-analytics", "destination": "/chat-analytics-real-time", "permanent": false },
     { "source": "/Chat%20Analytics%20(Real-time)", "destination": "/chat-analytics-real-time", "permanent": false },
