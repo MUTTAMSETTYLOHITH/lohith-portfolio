@@ -32,7 +32,7 @@ const projects = [
       "Azure AD (OIDC) + SSL auto-rotation",
     ],
     links: {
-      demo: "https://healthcare-credentialing.vercel.app/verifications",
+      demo: "https://healthcred-console.vercel.app/",
       repo: "https://github.com/MUTTAMSETTYLOHITH/healthcare-credentialing",
     },
   },
@@ -389,4 +389,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
