@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -20,8 +20,7 @@ import {
 
 type IconType = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
-const projects = [
-  {
+const projects = [{
     title: "Healthcare Credentialing Automation",
     subtitle: "Java 17 • Spring Boot • React • Kafka • AWS EKS • Terraform",
     description:
@@ -62,7 +61,7 @@ const projects = [
       "CI/CD via Jenkins & GitHub Actions",
     ],
     links: {
-      demo: "#",
+      demo: "https://fintech-transaction-monitor-b9yqtd52c.vercel.app",
       repo: "https://github.com/MUTTAMSETTYLOHITH/fintech-transaction-monitor",
     },
   },
@@ -77,25 +76,10 @@ const projects = [
       "GKE autoscaling",
     ],
     links: {
-      demo: "#",
+      demo: "https://chat-analytics-rc21afowt-lohith-muttamsettys-projects.vercel.app/",
       repo: "https://github.com/MUTTAMSETTYLOHITH/chat-analytics",
     },
-  },
-  {
-    title: "IAM & SSL Ops Dashboard",
-    subtitle: "Spring Security • OAuth2/OIDC • React • Azure AD • Certbot",
-    description:
-      "Unified portal for RBAC, SSO, and certificate lifecycle automation.",
-    highlights: [
-      "SAML + OIDC federation",
-      "RBAC + policy templates",
-      "Automated cert renewals",
-    ],
-    links: {
-      demo: "#",
-      repo: "https://github.com/MUTTAMSETTYLOHITH/iam-ssl-ops",
-    },
-  },
+  }
 ] as const;
 
 const skills = {
@@ -172,7 +156,7 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              Java / AI Engineer
+              Java / Cloud-Native Engineer
               <span className="block text-slate-500 text-xl md:text-2xl mt-2">
                 Building Intelligent Microservices & Cloud Platforms
               </span>
@@ -237,7 +221,7 @@ export default function Portfolio() {
       </section>
 
       {/* About */}
-      <section id="about" className="max-w-6xl mx:auto px-4 py-8">
+      <section id="about" className="max-w-6xl mx-auto px-4 py-8">
         <SectionTitle icon={Cloud} title="About" subtitle="Pragmatic, data-driven, and product-minded" />
         <Card className="rounded-3xl">
           <CardContent className="p-6 text-slate-700 leading-relaxed">
@@ -389,3 +373,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+

@@ -77,23 +77,9 @@ const projects = [
       "GKE autoscaling",
     ],
     links: {
-      demo: "https://chat-analytics-rc21afowt-lohith-muttamsettys-projects.vercel.app/",
+      demo:
+        "https://chat-analytics-rc21afowt-lohith-muttamsettys-projects.vercel.app/",
       repo: "https://github.com/MUTTAMSETTYLOHITH/chat-analytics",
-    },
-  },
-  {
-    title: "IAM & SSL Ops Dashboard",
-    subtitle: "Spring Security • OAuth2/OIDC • React • Azure AD • Certbot",
-    description:
-      "Unified portal for RBAC, SSO, and certificate lifecycle automation.",
-    highlights: [
-      "SAML + OIDC federation",
-      "RBAC + policy templates",
-      "Automated cert renewals",
-    ],
-    links: {
-      demo: "#",
-      repo: "https://github.com/MUTTAMSETTYLOHITH/iam-ssl-ops",
     },
   },
 ] as const;
@@ -114,11 +100,11 @@ const skills = {
   Security_Observability: ["OAuth2/OIDC", "SAML", "SSL automation", "Prometheus", "Grafana", "Splunk"],
 } as const;
 
-const SectionTitle: React.FC<{ icon: IconType; title: string; subtitle?: string }> = ({
-  icon: Icon,
-  title,
-  subtitle,
-}) => (
+const SectionTitle: React.FC<{
+  icon: IconType;
+  title: string;
+  subtitle?: string;
+}> = ({ icon: Icon, title, subtitle }) => (
   <div className="flex items-center gap-3 mb-6">
     <div className="p-3 rounded-2xl shadow bg-white/70 backdrop-blur">
       <Icon className="h-6 w-6" />
@@ -147,7 +133,11 @@ export default function Portfolio() {
               ["Experience", "#experience"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
-              <a key={label} href={href as string} className="px-3 py-2 rounded-xl hover:bg-slate-100 text-sm">
+              <a
+                key={label}
+                href={href as string}
+                className="px-3 py-2 rounded-xl hover:bg-slate-100 text-sm"
+              >
                 {label}
               </a>
             ))}
@@ -159,7 +149,11 @@ export default function Portfolio() {
               </a>
             </Button>
             <Button asChild className="rounded-2xl">
-              <a href="https://github.com/MUTTAMSETTYLOHITH" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/MUTTAMSETTYLOHITH"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="h-4 w-4 mr-2" /> GitHub
               </a>
             </Button>
@@ -172,14 +166,14 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              Java / AI Engineer
+              Java / Cloud-Native Engineer
               <span className="block text-slate-500 text-xl md:text-2xl mt-2">
                 Building Intelligent Microservices & Cloud Platforms
               </span>
             </h1>
             <p className="mt-4 text-slate-600">
-              Spring Boot • React • AWS • Kubernetes • Kafka • Identity (OIDC/SAML). Focused on performance, automation,
-              and secure-by-default delivery.
+              Spring Boot • React • AWS • Kubernetes • Kafka • Identity (OIDC/SAML). Focused on performance,
+              automation, and secure-by-default delivery.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Badge className="rounded-full">99.9% Uptime</Badge>
@@ -288,13 +282,13 @@ export default function Portfolio() {
                 </ul>
                 <div className="flex gap-3 pt-2">
                   <Button asChild size="sm" className="rounded-xl">
-                    <a href={p.links.demo} target="_blank" rel="noreferrer">
+                    <a href={p.links.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </a>
                   </Button>
                   <Button asChild size="sm" variant="secondary" className="rounded-xl">
-                    <a href={p.links.repo} target="_blank" rel="noreferrer">
+                    <a href={p.links.repo} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Source
                     </a>
@@ -321,14 +315,42 @@ export default function Portfolio() {
               <p>• SSL lifecycle automation + Azure AD federation</p>
             </CardContent>
           </Card>
+
           <Card className="rounded-3xl">
             <CardHeader>
               <CardTitle className="text-lg">Tower Hill Insurance • 2024</CardTitle>
               <p className="text-xs text-muted-foreground">React/Angular • SQL tuning • CI/CD</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• +45% claims throughput; ˆ’30% UI/SQL load times</p>
+              <p>• +45% claims throughput; -30% UI/SQL load times</p>
               <p>• Release overhead halved with GitLab & Azure DevOps</p>
+            </CardContent>
+          </Card>
+
+          {/* Kotak */}
+          <Card className="rounded-3xl">
+            <CardHeader>
+              <CardTitle className="text-lg">Kotak Mahindra Bank (Banking) • Sep 2020 – Nov 2022</CardTitle>
+              <p className="text-xs text-muted-foreground">Java 11 • Spring Boot • Kafka • PostgreSQL • Redis</p>
+            </CardHeader>
+            <CardContent className="text-sm text-slate-700 space-y-1">
+              <p>• Event-driven microservices for payments & compliance; cut p95 latency ~30% via caching & SQL tuning</p>
+              <p>• Idempotent workflows + DLQs on Kafka; eliminated duplicate processing</p>
+              <p>• OAuth2/OIDC hardening; standardized logging/metrics (Prometheus/Grafana, ELK)</p>
+              <p>• CI/CD with Jenkins & GitLab; trunk-based releases</p>
+            </CardContent>
+          </Card>
+
+          {/* Exotel */}
+          <Card className="rounded-3xl">
+            <CardHeader>
+              <CardTitle className="text-lg">Exotel (Cloud Telephony) • Jun 2018 – Aug 2020</CardTitle>
+              <p className="text-xs text-muted-foreground">Java • Spring • REST APIs • MySQL • Redis • React</p>
+            </CardHeader>
+            <CardContent className="text-sm text-slate-700 space-y-1">
+              <p>• High-throughput messaging/voice APIs with multi-AZ failover & rate limits</p>
+              <p>• Reduced delivery failures ~20–25% via retries/backoff and dead-letter queues</p>
+              <p>• Built internal ops dashboards; improved incident MTTR with better observability</p>
             </CardContent>
           </Card>
         </div>
@@ -336,7 +358,7 @@ export default function Portfolio() {
 
       {/* Contact */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-8">
-        <SectionTitle icon={Mail} title="Contact" subtitle="Let€™s build something valuable" />
+        <SectionTitle icon={Mail} title="Contact" subtitle="Let’s build something valuable" />
         <Card className="rounded-3xl">
           <CardContent className="p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="space-y-1 text-slate-700">
@@ -348,13 +370,23 @@ export default function Portfolio() {
               </div>
               <div className="flex items-center gap-2">
                 <Linkedin className="h-4 w-4" />{" "}
-                <a className="underline" href="https://linkedin.com/in/lohith-muttamsetty" target="_blank" rel="noreferrer">
-                  linkedin.com/in/lohith-muttamsetty
+                <a
+                  className="underline"
+                  href="https://www.linkedin.com/in/lohith-muttamsetty-70a39b184/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/lohith-muttamsetty-70a39b184
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Github className="h-4 w-4" />{" "}
-                <a className="underline" href="https://github.com/MUTTAMSETTYLOHITH" target="_blank" rel="noreferrer">
+                <a
+                  className="underline"
+                  href="https://github.com/MUTTAMSETTYLOHITH"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   github.com/MUTTAMSETTYLOHITH
                 </a>
               </div>
@@ -366,7 +398,9 @@ export default function Portfolio() {
                 </a>
               </Button>
               <Button asChild className="rounded-2xl">
-                <a href="mailto:lmuttamsetty@gmail.com?subject=Interview%20Opportunity">Hire Me</a>
+                <a href="mailto:lmuttamsetty@gmail.com?subject=Interview%20Opportunity">
+                  Hire Me
+                </a>
               </Button>
             </div>
           </CardContent>
@@ -377,17 +411,27 @@ export default function Portfolio() {
       <footer className="max-w-6xl mx-auto px-4 py-10 text-center text-sm text-slate-500">
         © {new Date().getFullYear()} Lohith Muttamsetty • Built with React, Tailwind, and shadcn/ui
         <div className="mt-2 flex items-center justify-center gap-4">
-          <a className="underline" href="https://github.com/MUTTAMSETTYLOHITH" target="_blank" rel="noreferrer">
+          <a
+            className="underline"
+            href="https://github.com/MUTTAMSETTYLOHITH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-          <a className="underline" href="https://linkedin.com/in/lohith-muttamsetty" target="_blank" rel="noreferrer">
+          <a
+            className="underline"
+            href="https://www.linkedin.com/in/lohith-muttamsetty-70a39b184/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
-          <a className="underline" href="mailto:lmuttamsetty@gmail.com">Email</a>
+          <a className="underline" href="mailto:lmuttamsetty@gmail.com">
+            Email
+          </a>
         </div>
       </footer>
     </div>
   );
 }
-
-
