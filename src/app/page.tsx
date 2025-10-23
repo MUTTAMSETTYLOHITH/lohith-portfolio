@@ -23,11 +23,11 @@ type IconType = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 const projects = [
   {
     title: "Healthcare Credentialing Automation",
-    subtitle: "Java 17 • Spring Boot • React • Kafka • AWS EKS • Terraform",
+    subtitle: "Java 17 â€¢ Spring Boot â€¢ React â€¢ Kafka â€¢ AWS EKS â€¢ Terraform",
     description:
       "Cloud-native platform that automates clinician onboarding, verification, and compliance workflows with event-driven microservices.",
     highlights: [
-      "99.9% Uptime via EKS & multi-AZ",
+      "99.9% uptime via EKS & multi-AZ",
       "70% fewer manual checks (Kafka pipelines)",
       "Azure AD (OIDC) + SSL auto-rotation",
     ],
@@ -38,13 +38,13 @@ const projects = [
   },
   {
     title: "Claims Elite",
-    subtitle: "AWS Lambda • API Gateway • DynamoDB • SQS • React/Next.js",
+    subtitle: "AWS Lambda â€¢ API Gateway â€¢ DynamoDB â€¢ SQS â€¢ React/Next.js",
     description:
       "Event-driven claims intake, adjudication, and notifications with a real-time status UI and IaC provisioning.",
     highlights: [
       "Near-zero ops with serverless",
       "Idempotent workflows & DLQs",
-      "<200ms p95 API latency",
+      "p95 API < 200 ms",
     ],
     links: {
       demo: "https://claims-elite-advanced.vercel.app",
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "FinTech Transaction Monitor",
-    subtitle: "Spring Boot • Redis • PostgreSQL • Angular • Grafana",
+    subtitle: "Spring Boot â€¢ Redis â€¢ PostgreSQL â€¢ Angular â€¢ Grafana",
     description:
       "Real-time anomaly detection and fraud flagging with dashboards and alerting.",
     highlights: [
@@ -68,12 +68,12 @@ const projects = [
   },
   {
     title: "Chat Analytics (Real-time)",
-    subtitle: "Python FastAPI • Kafka • Elasticsearch • React • GKE",
+    subtitle: "Python FastAPI â€¢ Kafka â€¢ Elasticsearch â€¢ React â€¢ GKE",
     description:
       "Streaming sentiment and topic detection with search and visualization.",
     highlights: [
       "Kafka streams & windowed metrics",
-      "Full-text search w/ Elastic",
+      "Full-text search with Elasticsearch",
       "GKE autoscaling",
     ],
     links: {
@@ -94,7 +94,7 @@ const skills = {
     "Docker",
     "Kubernetes",
     "Terraform",
-    "GitHub Actions • Jenkins • GitLab CI",
+    "GitHub Actions â€¢ Jenkins â€¢ GitLab CI",
   ],
   Data_Stream: ["Kafka", "Redis", "PostgreSQL", "DynamoDB", "Elasticsearch"],
   Security_Observability: ["OAuth2/OIDC", "SAML", "SSL automation", "Prometheus", "Grafana", "Splunk"],
@@ -172,13 +172,13 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="mt-4 text-slate-600">
-              Spring Boot • React • AWS • Kubernetes • Kafka • Identity (OIDC/SAML). Focused on performance,
+              Spring Boot â€¢ React â€¢ AWS â€¢ Kubernetes â€¢ Kafka â€¢ IAM (OAuth2/OIDC • SAML). Focused on performance,
               automation, and secure-by-default delivery.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Badge className="rounded-full">99.9% Uptime</Badge>
-              <Badge className="rounded-full">↓40% Latency</Badge>
-              <Badge className="rounded-full">2× Faster Releases</Badge>
+              <Badge className="rounded-full">99.9% uptime</Badge>
+              <Badge className="rounded-full">â†“40% Latency</Badge>
+              <Badge className="rounded-full">2Ã— Faster Releases</Badge>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild className="rounded-2xl">
@@ -195,7 +195,7 @@ export default function Portfolio() {
               </Button>
             </div>
             <div className="mt-4 flex items-center gap-3 text-slate-600">
-              <MapPin className="h-4 w-4" /> Boca Raton, FL • Open to Remote/Hybrid
+              <MapPin className="h-4 w-4" /> Boca Raton, FL â€¢ Open to Remote/Hybrid
             </div>
           </motion.div>
 
@@ -221,7 +221,7 @@ export default function Portfolio() {
                     <Cpu className="h-4 w-4" /> Real-time streams with Kafka
                   </div>
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="h-4 w-4" /> IAM: OAuth2/OIDC • SAML • SSL Automation
+                    <ShieldCheck className="h-4 w-4" /> IAM: OAuth2/OIDC â€¢ SAML â€¢ SSL automation
                   </div>
                 </CardContent>
               </Card>
@@ -236,7 +236,7 @@ export default function Portfolio() {
         <Card className="rounded-3xl">
           <CardContent className="p-6 text-slate-700 leading-relaxed">
             I design and ship resilient, observable services that turn complex domain workflows into fast, delightful
-            experiences. Recent wins include 35↓40% Latency reductions, 99.9% Uptime, and CI/CD pipelines that halve
+            experiences. Recent wins include 35â†“40% Latency reductions, 99.9% uptime, and CI/CD pipelines that halve
             release overhead.
           </CardContent>
         </Card>
@@ -306,51 +306,51 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-2 gap-4">
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Arthrex (Med-Tech) • 2025</CardTitle>
-              <p className="text-xs text-muted-foreground">Java 17 • AWS EKS • React • IAM</p>
+              <CardTitle className="text-lg">Arthrex (Med-Tech) â€¢ 2025</CardTitle>
+              <p className="text-xs text-muted-foreground">Java 17 â€¢ AWS EKS â€¢ React â€¢ IAM</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• 99.9% Uptime with autoscaling & SLO alerts</p>
-              <p>• 35↓40% Latency reduction via profiling & caching</p>
-              <p>• SSL lifecycle automation + Azure AD federation</p>
+              <p>â€¢ 99.9% uptime with autoscaling & SLO alerts</p>
+              <p>â€¢ 35â†“40% Latency reduction via profiling & caching</p>
+              <p>â€¢ SSL lifecycle automation + Azure AD federation</p>
             </CardContent>
           </Card>
 
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Tower Hill Insurance • 2024</CardTitle>
-              <p className="text-xs text-muted-foreground">React/Angular • SQL tuning • CI/CD</p>
+              <CardTitle className="text-lg">Tower Hill Insurance â€¢ 2024</CardTitle>
+              <p className="text-xs text-muted-foreground">React/Angular â€¢ SQL tuning â€¢ CI/CD</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• +45% claims throughput; -30% UI/SQL load times</p>
-              <p>• Release overhead halved with GitLab & Azure DevOps</p>
+              <p>â€¢ +45% claims throughput; -30% UI/SQL load times</p>
+              <p>â€¢ Release overhead halved with GitLab & Azure DevOps</p>
             </CardContent>
           </Card>
 
           {/* Kotak */}
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Kotak Mahindra Bank (Banking) • Sep 2020 – Nov 2022</CardTitle>
-              <p className="text-xs text-muted-foreground">Java 11 • Spring Boot • Kafka • PostgreSQL • Redis</p>
+              <CardTitle className="text-lg">Kotak Mahindra Bank (Banking) â€¢ Sep 2020 â€“ Nov 2022</CardTitle>
+              <p className="text-xs text-muted-foreground">Java 11 â€¢ Spring Boot â€¢ Kafka â€¢ PostgreSQL â€¢ Redis</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• Event-driven microservices for payments & compliance; cut p95 latency ~30% via caching & SQL tuning</p>
-              <p>• Idempotent workflows + DLQs on Kafka; eliminated duplicate processing</p>
-              <p>• OAuth2/OIDC hardening; standardized logging/metrics (Prometheus/Grafana, ELK)</p>
-              <p>• CI/CD with Jenkins & GitLab; trunk-based releases</p>
+              <p>â€¢ Event-driven microservices for payments & compliance; cut p95 latency ~30% via caching & SQL tuning</p>
+              <p>â€¢ Idempotent workflows + DLQs on Kafka; eliminated duplicate processing</p>
+              <p>â€¢ OAuth2/OIDC hardening; standardized logging/metrics (Prometheus/Grafana, ELK)</p>
+              <p>â€¢ CI/CD with Jenkins & GitLab; trunk-based releases</p>
             </CardContent>
           </Card>
 
           {/* Exotel */}
           <Card className="rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-lg">Exotel (Cloud Telephony) • Jun 2018 – Aug 2020</CardTitle>
-              <p className="text-xs text-muted-foreground">Java • Spring • REST APIs • MySQL • Redis • React</p>
+              <CardTitle className="text-lg">Exotel (Cloud Telephony) â€¢ Jun 2018 â€“ Aug 2020</CardTitle>
+              <p className="text-xs text-muted-foreground">Java â€¢ Spring â€¢ REST APIs â€¢ MySQL â€¢ Redis â€¢ React</p>
             </CardHeader>
             <CardContent className="text-sm text-slate-700 space-y-1">
-              <p>• High-throughput messaging/voice APIs with multi-AZ failover & rate limits</p>
-              <p>• Reduced delivery failures ~20–25% via retries/backoff and dead-letter queues</p>
-              <p>• Built internal ops dashboards; improved incident MTTR with better observability</p>
+              <p>â€¢ High-throughput messaging/voice APIs with multi-AZ failover & rate limits</p>
+              <p>â€¢ Reduced delivery failures ~20â€“25% via retries/backoff and dead-letter queues</p>
+              <p>â€¢ Built internal ops dashboards; improved incident MTTR with better observability</p>
             </CardContent>
           </Card>
         </div>
@@ -358,7 +358,7 @@ export default function Portfolio() {
 
       {/* Contact */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-8">
-        <SectionTitle icon={Mail} title="Contact" subtitle="Let’s build something valuable" />
+        <SectionTitle icon={Mail} title="Contact" subtitle="Letâ€™s build something valuable" />
         <Card className="rounded-3xl">
           <CardContent className="p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="space-y-1 text-slate-700">
@@ -409,7 +409,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-4 py-10 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Lohith Muttamsetty • Built with React, Tailwind, and shadcn/ui
+        Â© {new Date().getFullYear()} Lohith Muttamsetty â€¢ Built with React, Tailwind, and shadcn/ui
         <div className="mt-2 flex items-center justify-center gap-4">
           <a
             className="underline"
